@@ -1,0 +1,70 @@
+﻿<Window x:Class="QM.ManageCities"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QM"
+        mc:Ignorable="d"
+        Title="ManageCities" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="gridCities" SelectionChanged="gridCities_SelectionChanged" AutoGeneratingColumn="gridCities_AutoGeneratingColumn" Loaded="gridCities_Loaded" HorizontalAlignment="Left" Height="288" Margin="10,10,0,0" VerticalAlignment="Top" Width="774"/>
+        <Label Content="City" FontWeight="ExtraBold" HorizontalAlignment="Left" Height="30" Margin="19,309,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="1.123"/>
+                    <RotateTransform Angle="-0.466"/>
+                    <TranslateTransform X="0.004" Y="0.461"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txtCity"  HorizontalAlignment="Left" Height="27" Margin="6,353,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="116"/>
+        <Label Content="State" FontWeight="ExtraBold" HorizontalAlignment="Left" Height="30" Margin="155,311,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="1.123"/>
+                    <RotateTransform Angle="-0.466"/>
+                    <TranslateTransform X="0.004" Y="0.461"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txtState" HorizontalAlignment="Left" Height="27" Margin="139,353,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="116"/>
+        <Label Content="Country" FontWeight="ExtraBold" HorizontalAlignment="Left" Height="30" Margin="270,309,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.462,0.723">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="1.123"/>
+                    <RotateTransform Angle="-0.466"/>
+                    <TranslateTransform X="0.059" Y="0.435"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txtCountry" HorizontalAlignment="Left" Height="27" Margin="273,353,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="116" RenderTransformOrigin="0.404,0.512"/>
+        <Label Content="Std Code" FontWeight="ExtraBold" HorizontalAlignment="Left" Height="30" Margin="545,309,0,0" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.54,0.565">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="1.123"/>
+                    <RotateTransform Angle="-0.466"/>
+                    <TranslateTransform X="0.021" Y="0.488"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox  x:Name="txtPincode" HorizontalAlignment="Left" Height="27" Margin="412,353,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="116"/>
+        <Label Content="Pincode" FontWeight="ExtraBold" HorizontalAlignment="Left" Height="30" Margin="409,312,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="1.123"/>
+                    <RotateTransform Angle="-0.466"/>
+                    <TranslateTransform X="0.004" Y="0.461"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txtStdCode" HorizontalAlignment="Left" Height="27" Margin="550,353,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="btnSaveCity" Click="btnSaveCity_Click" Content="Save" HorizontalAlignment="Left" Height="31" Margin="678,314,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="btnDeleteCity" Click="btnDeleteCity_Click" Content="Delete" HorizontalAlignment="Left" Height="31" Margin="678,359,0,0" VerticalAlignment="Top" Width="97"/>
+
+    </Grid>
+</Window>
